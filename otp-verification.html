@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Verification</title>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Enter OTP</h2>
+    <form id="otpVerificationForm">
+      <input type="text" id="otp" placeholder="Enter OTP" required>
+      <button type="submit" class="login-btn">Verify OTP</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('otpVerificationForm').addEventListener('submit', async function (event) {
+      event.preventDefault();
+      const otp = document.getElementById('otp').value;
+
+      const response = await fetch('/api/otp-verification', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ otp })
+      });
+
+      if (response.ok) {
+        alert('OTP verified successfully');
+        window.location.href = '/reset-password.html';  // Redirect to reset password page after successful OTP verification
+      } else {
+        alert('Invalid OTP');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -8,75 +8,74 @@
     /* Basic Styles */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background: url('https://raw.githubusercontent.com/vikosingh1/Crictrik/15dfa3a80bfd554e041878cee1305080d1315207/%E2%80%94Pngtree%E2%80%94icc%20cricket%20world%20match%20background_13431639.png') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
       line-height: 1.6;
       display: flex;
       justify-content: center;
       padding: 20px;
-      margin: 0;
     }
 
     .container {
       max-width: 800px;
       width: 100%;
-      background: white;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: transparent; /* Container no background to merge with the page */
     }
 
     h2 {
-      color: #007BFF;
-      font-size: 1.8em;
+      color: #ffffff; /* Light color for headings */
+      text-align: center;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow */
+    }
+
+    p {
+      color: #ffffff; /* White text for better contrast */
+      font-size: 1.1rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for readability */
     }
 
     .back-link {
       display: inline-block;
       margin-bottom: 20px;
-      color: #007BFF;
+      color: #ffffff; /* White color for links */
       text-decoration: none;
       font-weight: bold;
+      background-color: #007BFF;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .back-link:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      background-color: #0056b3;
+      transform: scale(1.1);
     }
 
     .list-item {
       margin-left: 20px;
-      font-size: 1.2em;
+      font-size: 1.1rem;
+      color: #ffffff; /* White text for list items */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for readability */
     }
 
-    /* Responsive Styles */
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
-
-      .container {
-        padding: 15px;
-      }
-
-      h2 {
-        font-size: 1.5em;
-      }
-
-      .back-link {
-        font-size: 1em;
-      }
-
-      .list-item {
-        font-size: 1em;
-        margin-left: 15px;
-      }
+    ul {
+      padding-left: 20px;
     }
+
   </style>
 </head>
 <body>
   <div class="container">
     <a href="index.html" class="back-link">← Back to Home</a>
     <h2>Diet Plan</h2>
+    <p>Fuel Your Game with the Right Nutrition. In the Diet Plan section, we provide dietary advice to help you stay energized, build muscle, and recover quickly after training. Discover meal plans that focus on nutrient-rich foods like lean proteins, whole grains, and vegetables, all specifically chosen to support cricket players. We outline how a balanced diet can give you the edge on the field, helping you make smarter food choices that support long-term health and peak performance. Explore diet tips that empower you to stay fit and focused, both on and off the field.</p>
     <ul>
       <li class="list-item">Cereal</li>
       <li class="list-item">Vegetables</li>

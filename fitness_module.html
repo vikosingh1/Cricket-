@@ -8,84 +8,83 @@
     /* Basic Styles */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
       color: #333;
       line-height: 1.6;
       display: flex;
       justify-content: center;
       padding: 20px;
-      margin: 0;
+      background-image: url('https://raw.githubusercontent.com/vikosingh1/Crictrik/b00c8c4beceb171bd1142272185052298f797ec6/images%20(2).jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
 
     .container {
       max-width: 800px;
       width: 100%;
-      background: white;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: transparent; /* Container has no background to blend with the page background */
     }
 
     h2 {
-      color: #007BFF;
-      font-size: 1.8em;
+      color: #ffffff; /* Light text color for visibility */
+      text-align: center;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow */
+    }
+
+    p {
+      color: #ffffff; /* White text for better contrast */
+      font-size: 1.1rem;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for readability */
     }
 
     h3 {
-      font-size: 1.2em;
+      color: #ffffff; /* Light color for headings */
+      font-size: 1.5rem;
       margin-top: 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for readability */
     }
 
     .back-link {
       display: inline-block;
       margin-bottom: 20px;
-      color: #007BFF;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
+      background-color: #007BFF;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .back-link:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      background-color: #0056b3;
+      transform: scale(1.1);
     }
 
     .list-item {
       margin-left: 20px;
-      font-size: 1em;
+      font-size: 1.1rem;
+      color: #ffffff; /* Light text for better readability */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Text shadow for readability */
     }
 
-    /* Responsive Styles */
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
-
-      .container {
-        padding: 15px;
-      }
-
-      h2 {
-        font-size: 1.5em;
-      }
-
-      h3 {
-        font-size: 1em;
-      }
-
-      .back-link {
-        font-size: 1em;
-      }
-
-      .list-item {
-        font-size: 0.9em;
-        margin-left: 15px;
-      }
+    ul {
+      padding-left: 20px;
     }
+
   </style>
 </head>
 <body>
   <div class="container">
     <a href="index.html" class="back-link">← Back to Home</a>
     <h2>Fitness Module</h2>
+    <p>Train Like a Pro with the Fitness Module. Our Fitness Module is designed to help cricket players build the strength, agility, and endurance they need to excel on the field. We’ve curated workouts and stretches targeting the physical demands unique to cricket. From warm-ups and cool-downs to full-body exercises, each activity is crafted to improve flexibility, speed, and stability. Dive in to start training like a professional, with guidance that’s suitable for all fitness levels and tailored to elevate your cricket performance.</p>
     <h3>Recommended Stretches</h3>
     <ul>
       <li class="list-item">Squats</li>

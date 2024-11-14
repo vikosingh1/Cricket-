@@ -1,3 +1,4 @@
+<!-- /public/create-account.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,83 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create Account</title>
   <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: Arial, sans-serif;
-      background-image: url('https://raw.githubusercontent.com/vikosingh1/Crictrik/15dfa3a80bfd554e041878cee1305080d1315207/%E2%80%94Pngtree%E2%80%94icc%20cricket%20world%20match%20background_13431639.png');
+      background-image: url('https://raw.githubusercontent.com/vikosingh1/Cricket-/1e3f7efccbfe57e3bda02ffb2e013be0a47f99fe/images%20(3).jpeg');
       background-size: cover;
       background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       color: white;
+      font-family: Arial, sans-serif;
     }
-
     .login-container {
-      background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      width: 100%;
       max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      text-align: center;
     }
-
-    h2 {
-      margin-bottom: 20px;
-      color: #ffeb3b;
-      font-size: 1.8em;
-    }
-
-    input {
+    .login-container input {
       width: 100%;
-      padding: 12px;
+      padding: 10px;
       margin: 10px 0;
+      border-radius: 5px;
       border: 1px solid #ddd;
-      border-radius: 5px;
-      background-color: #f4f4f4;
-      color: #333;
-      font-size: 1em;
+      font-size: 16px;
     }
-
-    input:focus {
-      outline: none;
-      border-color: #ffeb3b;
-    }
-
-    .login-btn {
-      background-color: #007BFF;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1.1em;
+    .login-container button {
       width: 100%;
-      margin-top: 10px;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
     }
-
-    .login-btn:hover {
-      background-color: #0056b3;
-    }
-
-    .login-container a {
-      display: inline-block;
-      margin-top: 15px;
-      color: #ffeb3b;
-      font-size: 0.9em;
-      text-decoration: none;
-    }
-
-    .login-container a:hover {
-      text-decoration: underline;
+    .login-container button:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
@@ -91,13 +50,12 @@
     <form id="registerForm">
       <input type="email" id="regEmail" placeholder="Enter your email" required>
       <input type="password" id="regPassword" placeholder="Enter your password" required>
-      <button type="submit" class="login-btn">Create Account</button>
+      <button type="submit">Create Account</button>
     </form>
-    <a href="/login">Already have an account? Login here</a>
   </div>
 
   <script>
-    document.getElementById('registerForm').addEventListener('submit', async function (event) {
+    document.getElementById('registerForm').addEventListener('submit', async function(event) {
       event.preventDefault();
       const email = document.getElementById('regEmail').value;
       const password = document.getElementById('regPassword').value;
@@ -110,7 +68,7 @@
 
       if (response.ok) {
         alert('Account created successfully');
-        window.location.href = '/login';  // Redirect to login page after successful account creation
+        window.location.href = '/index.html';  // Redirect to index page after successful account creation
       } else {
         alert('Account creation failed');
       }

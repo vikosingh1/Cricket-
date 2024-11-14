@@ -5,79 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skill Drills - Crictrik</title>
   <style>
-    /* Basic Styles */
+    /* Global Styles */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://raw.githubusercontent.com/vikosingh1/Crictrik/9623d093ddaeffd4dabfc2277f10207b3580c71d/images%20(3).jpeg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
-      padding: 20px;
-      margin: 0;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
     }
 
+    /* Container */
     .container {
-      max-width: 800px;
       width: 100%;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 900px;
+      background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text readability */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      text-align: center;
     }
 
     h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
       color: #007BFF;
-      font-size: 1.8em;
-    }
-
-    h3 {
-      color: #007BFF;
-      font-size: 1.5em;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-bottom: 20px;
-      color: #007BFF;
-      text-decoration: none;
       font-weight: bold;
     }
 
-    .back-link:hover {
-      text-decoration: underline;
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      text-align: left;
+      color: #f4f4f4; /* Light color for readability */
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      color: #007BFF;
+      margin-top: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      margin-top: 10px;
     }
 
     .list-item {
-      margin-left: 20px;
-      font-size: 1.2em;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
     }
 
-    /* Responsive Styles */
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
+    .list-item::before {
+      content: '✔';
+      color: #007BFF;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
 
+    /* Back to Home Button */
+    .back-link {
+      display: inline-block;
+      background-color: #007BFF;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .back-link:hover {
+      background-color: #0056b3;
+      transform: scale(1.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
       .container {
-        padding: 15px;
+        padding: 20px;
       }
 
       h2 {
-        font-size: 1.5em;
+        font-size: 2rem;
       }
 
       h3 {
-        font-size: 1.3em;
+        font-size: 1.4rem;
       }
 
       .back-link {
-        font-size: 1em;
-      }
-
-      .list-item {
-        font-size: 1em;
-        margin-left: 15px;
+        font-size: 1rem;
+        padding: 10px 20px;
       }
     }
   </style>
@@ -86,16 +123,20 @@
   <div class="container">
     <a href="index.html" class="back-link">← Back to Home</a>
     <h2>Skill Drills</h2>
+    <p>Enhance Your Technique with Skill Drills. Our Skill Drills section is dedicated to helping players refine specific cricket skills through targeted drills. With exercises focused on batting, bowling, and fielding, this section provides structured practice routines designed to improve accuracy, technique, and confidence. Perfect for both individual practice and team training sessions, these drills are crafted to help you take your cricket skills to the next level. Whether you're working on the perfect drive or refining your spin technique, Crictrik has drills to suit every player’s needs.</p>
+
     <h3>Batting Drills</h3>
     <ul>
       <li class="list-item">Front Foot Drive</li>
       <li class="list-item">Straight Drive</li>
     </ul>
+
     <h3>Bowling Drills</h3>
     <ul>
       <li class="list-item">Pace Bowling Drill</li>
       <li class="list-item">Spin Bowling Loop Drill</li>
     </ul>
+
     <h3>Fielding Drills</h3>
     <ul>
       <li class="list-item">Catching Drill</li>
